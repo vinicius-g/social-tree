@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Tree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="js/perfil.js" type="module" defer></script>
+    <script src="js/forms.js" type="module" defer></script>
+    <script src="js/socialMediaForm.js" type="module" defer></script>
+    <script src="js/validator.js" type="module" defer></script>
+    <script src="js/links.js" type="module" defer></script> -->
+    <script src="js/init.js" type="module" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="perfil">
+                <div tabindex="0">
+                    <img id="image-preview" alt="perfil"> 
+                    <i id="add-image" class='bx bx-plus'></i>
+                    <i id="edit-image" class='bx bxs-edit hide'></i>
+                    <label for="input-image"></label>
+                    <input type="file" accept="image/*" id="input-image">
+                </div>
+            </div>
+
+            <div id="link-tree">
+                <button id="add-link">
+                    <i class='bx bx-plus'></i>
+                </button>
+            </div>
+
+            <div id="social-links">
+                <button id="add-social-media">
+                    <i class='bx bx-plus' ></i>
+                </button>
+            </div>
+
+            <div id="links-form">
+                <i class='bx bx-x' id="close-links-form"></i>
+
+                <h2 id="links-form-title">Adicionar link</h2>
+
+                <label for="link-title">Título</label>
+                <span>
+                    <i class='bx bx-text'></i>
+                    <input type="text" id="link-title">
+                </span>
+
+                <label for="link-url">Link</label>
+                <span>
+                    <i class='bx bx-link' ></i>
+                    <input type="url" id="link-url">
+                </span>
+
+                <button id="create-link">Criar</button>
+                <button id="edit-link" class="hide">Editar</button>
+            </div>
+
+            <div id="social-media-form">
+                <i class='bx bx-x' id="close-social-media-form"></i>
+
+                <h2 id="social-media-form-title">Adicionar rede social</h2>
+
+                <div id="social-media">
+                    <div id="social-media-selected">
+                        <span id="social-media-preview" data-social-media="">Selecione uma rede</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <ul id="social-media-options" class="hide">
+                        <li data-social-media="bx bxl-github">github</li>
+                        <li data-social-media="bx bxl-linkedin">linkedin</li>
+                        <li data-social-media="bx bxl-instagram">instagram</li>
+                        <li data-social-media="bx bxl-facebook">facebook</li>
+                        <li data-social-media="bx bxl-youtube">youtube</li>
+                        <li data-social-media="bx bxl-twitch">twitch</li>
+                        <li data-social-media="bx bxl-tiktok">tik tok</li>
+                        <li data-social-media="bx bxl-twitter">twitter</li>
+                    </ul>
+                </div>
+
+                <label for="social-media-url">Link</label>
+                <span>
+                    <i class='bx bx-link' ></i>
+                    <input type="url" id="social-media-url">
+                </span>
+
+                <button id="create-social-media">Criar</button>
+                <button id="edit-social-media" class="hide">Editar</button>
+            </div>
+        </section>
+
+        <div id="backdrop"></div>
+    </main>
+</body>
+</html>
